@@ -1,0 +1,131 @@
+/* =======================================
+   Service Card Component
+   ======================================= */
+
+.service-card {
+  padding: 1.5rem;
+  border-radius: $os-radius-card;
+  background: $os-color-white;
+  box-shadow: $os-shadow-soft;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: $os-shadow-medium;
+}
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+
+/* Header: Icon + Title */
+.service-card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 8px;
+  background: $os-color-surface;
+  border: 1px solid $os-color-border;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2.2;
+  }
+}
+
+
+
+
+.service-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Description */
+.service-card-description {
+  font-size: 0.95rem;
+  line-height: 1.45rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Tags */
+.service-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.service-tag {
+  padding: 0.35rem 0.6rem;
+  background: $os-color-bg;
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.service-card-buttons-top {
+  margin-top: $os-space-sm;
+  margin-bottom: $os-space-sm;
+}
+
+.service-btn--pricing {
+  background: $os-color-surface;
+  border: 1px solid $os-color-border;
+  color: $os-color-text;
+  border-radius: $os-radius-button;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: lighten($os-color-surface, 3%);
+  }
+}
+
+.service-card-buttons {
+  display: flex;
+  gap: $os-space-sm;
+  margin-top: $os-space-sm;
+}
+
+.service-btn {
+  flex: 1;
+  padding: 0.4rem 0.35rem;
+  border-radius: $os-radius-button;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.service-btn--whatsapp {
+  background: $os-color-primary;
+  color: $os-color-white;
+
+  &:hover {
+    background: $os-color-hover;
+  }
+}
+
+.service-btn--email {
+  background: $os-color-surface;
+  color: $os-color-text;
+  border: 1px solid $os-color-border;
+
+  &:hover {
+    background: lighten($os-color-surface, 3%);
+  }
+}

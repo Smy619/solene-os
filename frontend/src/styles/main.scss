@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap');
+
+// Global variables
+@import "./variables";
+
+// UIW markdown editor styles
+@import "./vendor/markdown-editor";
+
+// Base styles
+@import "./base/reset";
+@import "./base/typography";
+
+// Layout & Components
+@import "./components/card";
+@import "./components/dock";
+@import "./components/basecard";
+@import "./components/projectcard";
+@import "./components/servicecard";
+@import "./layout/layout";
+@import "./components/apppage";
+@import "./layout/adminlayout";
+@import "./components/appcard";
+@import "./components/oslogo";
+@import "./components/aboutmecard";
+@import "./components/pricingcard";
+@import "./components/sectionHeader";
+
+
+// Pages
+@import "./pages/home";
+@import "./pages/projects";
+@import "./pages/studio";
+@import "./pages/editor";
+@import "./pages/blog";
+@import "./pages/notes";
+@import "./pages/blogdetail";
+@import "./pages/settings";
+@import "./pages/adminlogin";
+@import "./pages/admin";
+@import "./pages/shop";
+@import "./pages/aitools";
+@import "./pages/contact";
+
+// Responsive
+@import "./responsive";
+
+

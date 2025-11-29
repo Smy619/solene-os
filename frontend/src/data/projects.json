@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Kasa — Apartment Rental Platform",
+    "description": "A complete React-based SPA created during the OpenClassrooms formation (P6). Fully responsive with dynamic routing and UI components.",
+    "image": "/assets/projects/sophie-bluel.png",
+    "tags": ["React", "JavaScript", "UI Components"],
+    "github": "https://github.com/Smy619/Portfolio-architecte-sophie-bluel",
+    "demo": "https://architecte-sophie-bluel.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "ArgentBank — Online Banking Application",
+    "description": "A banking dashboard built with React and Redux (OpenClassrooms P10). Includes authentication, user accounts, and API integration.",
+    "image": "/assets/projects/argentbank.jpg",
+    "tags": ["React", "Redux", "API"],
+    "github": "https://github.com/smy619/ArgentBank-pro",
+    "demo": "https://argent-bank-pro.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "Mes Resto — Restaurant SaaS Builder",
+    "description": "A dynamic multi-restaurant SaaS platform where users can create their own restaurant website.",
+    "image": "/assets/projects/mesresto.png",
+    "tags": ["SaaS", "React", "Node.js", "Full Stack"],
+    "github": "https://github.com/Smy619/yuzuresto",
+    "demo": "http://yuzuresto.netlify.app"
+  },
+  {
+    "id": 4,
+    "title": "Solene Dev Studio OS — Web App System",
+    "description": "A personal iPadOS-inspired web operating system built with React. Includes apps, layout system, dock, and page architecture.",
+    "image": "/assets/projects/solene-os.png",
+    "tags": ["React", "Design System", "Architecture"],
+    "github": "https://github.com/solene/solene-os",
+    "demo": "https://solenesun.com"
+  }
+]

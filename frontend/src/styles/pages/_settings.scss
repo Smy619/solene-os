@@ -1,0 +1,45 @@
+.settings-page {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.settings-section {
+  background: white;
+  padding: 1rem 0;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.settings-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid rgba(0,0,0,0.08);
+
+  &:hover {
+    background: #f3f3f3;
+  }
+}
+
+.settings-arrow {
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.no-link:hover {
+  background: white !important;
+}

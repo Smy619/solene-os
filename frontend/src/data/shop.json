@@ -1,0 +1,23 @@
+[
+  {
+    "id": "wp-themes",
+    "name": "WordPress Themes",
+    "description": "High-quality, structure-oriented WordPress themes designed for restaurant businesses and freelancers.",
+    "tag": "WordPress",
+    "label": "Coming soon"
+  },
+  {
+    "id": "saas-templates",
+    "name": "SaaS Templates",
+    "description": "Production-ready front-end and backend boilerplates to help you build MVPs and client demos faster.",
+    "tag": "SaaS",
+    "label": "Planning"
+  },
+  {
+    "id": "ai-prompts",
+    "name": "AI Prompts Library",
+    "description": "A curated library of prompts used across real client projects: emails, SEO, UI structure, refactoring and more.",
+    "tag": "AI / Prompts",
+    "label": "Drafting"
+  }
+]

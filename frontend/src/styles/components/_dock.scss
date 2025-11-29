@@ -1,0 +1,73 @@
+/* =======================================
+   Dock — macOS style
+======================================= */
+
+.os-dock {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 1.2rem;
+
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  z-index: 1000;
+}
+
+.os-dock {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.os-dock.dock-hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(50px); 
+  pointer-events: none;
+}
+
+.dock-icon {
+  width: 2.625rem; /* 42px */
+  height: 2.625rem; /* 42px */
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.22s ease-out, background 0.22s ease-out;
+  will-change: transform;
+}
+
+.dock-icon img {
+  width: 1.375rem; /* 22px */
+  opacity: 0.88;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.dock-icon:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.dock-icon:hover img {
+  opacity: 1;
+}
+
+.dock-icon:active {
+  transform: scale(0.88);
+}
+

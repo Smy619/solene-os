@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "How I Designed SoleneOS",
+    "subtitle": "Turning a portfolio into a full OS-like system",
+    "date": "2025-11-22",
+    "cover": "/assets/blog/soleneos-cover.jpg",
+    "excerpt": "A deep dive into the UI decisions, SCSS architecture and React structure behind SoleneOS."
+  },
+  {
+    "id": 2,
+    "title": "MonResto — From Template to WordPress Theme",
+    "subtitle": "The journey of building my first commercial WP theme",
+    "date": "2025-11-20",
+    "cover": "/assets/blog/monresto-cover.jpg",
+    "excerpt": "How I converted a pure HTML/SCSS project into a customizable WordPress theme."
+  }
+]

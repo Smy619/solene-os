@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "AI Job Hunter",
+    "description": "Generate tailored CVs, cover letters, email responses, and interview scripts automatically.",
+    "tag": "Career",
+    "status": "Coming soon"
+  },
+  {
+    "id": 2,
+    "name": "AI Theme2WP",
+    "description": "Convert Figma or HTML structure into a full WordPress theme automatically.",
+    "tag": "WordPress",
+    "status": "Coming soon"
+  },
+  {
+    "id": 3,
+    "name": "AI Tarot",
+    "description": "Draw tarot cards with AI-powered interpretation for clarity and inspiration.",
+    "tag": "Tarot",
+    "status": "Not available yet"
+  },
+  {
+    "id": 4,
+    "name": "AI Email Assistant",
+    "description": "Write, reply, classify, and summarize emails instantly using intelligent workflows.",
+    "tag": "Email",
+    "status": "Not available yet"
+  },
+  {
+    "id": 5,
+    "name": "AI Prompts Library",
+    "description": "A curated library of production-ready prompts for SEO, UI structure, emails, and development.",
+    "tag": "Prompts",
+    "status": "Not available yet"
+  }
+]

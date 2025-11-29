@@ -1,0 +1,16 @@
+.card {
+  background: $os-color-white;
+  border-radius: $os-radius-card;
+  box-shadow: $os-shadow-soft;
+  padding: $os-space-lg;
+}
+
+.card--small {
+  border-radius: $os-radius-small;
+  padding: $os-space-md;
+}
+
+.card--center {
+  text-align: center;
+}
+

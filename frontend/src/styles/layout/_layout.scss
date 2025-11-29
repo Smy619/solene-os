@@ -1,0 +1,175 @@
+/* =======================================
+   1) Home Layout
+======================================= */
+.home-layout {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $os-color-bg;
+  animation: bgFade 0.6s ease both;
+}
+
+.home-screen {
+  width: 100%;
+  max-width: 56rem; /* 900px */
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -7rem;
+  padding-bottom: 2rem;
+  animation: fadeSlideUp 0.6s ease both;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =======================================
+   2) OS Header 
+======================================= */
+
+.os-header {
+  width: 100%;
+  height: 48px;
+  padding: 0 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  transition: background 0.25s ease, border-color 0.25s ease;
+
+  .os-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .os-header-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1f1f1f;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+    }
+
+    .os-header-title:hover {
+      color: #1f1f1f;
+      text-decoration: none;
+    }
+  }
+}
+
+.os-header-active {
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(16px);
+}
+.os-header-hidden {
+  transform: translateY(-65px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.os-header {
+  transition: transform 0.35s ease, opacity 0.35s ease, background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* =======================================
+   3) SoleneOS App Layout
+======================================= */
+
+.os-app-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: $os-color-bg;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: fadeIn 0.45s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.os-screen {
+  flex: 1;
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+
+  padding: 1.25rem;
+  padding-top: 4.5rem;
+
+  box-sizing: border-box;
+  animation: windowPop 0.45s ease both;
+}
+
+@keyframes windowPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bgFade {
+  from {
+    background-color: #f9fafb00;
+  }
+  to {
+    background-color: $os-color-bg;
+  }
+}
+
+/* -----------------------------
+   Solene OS — Copyright Footer
+------------------------------ */
+
+.os-copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  line-height: 1.4;
+
+  animation: fadeIn 0.4s ease-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

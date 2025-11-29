@@ -1,0 +1,42 @@
+/* -------------------------
+   BaseCard — Mac App Style
+-------------------------- */
+
+.base-card {
+  background: rgba(255, 255, 255, 0.58);
+  border-radius: $os-radius-large;
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  padding: $os-space-lg;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  /* Apple-style subtle top highlight */
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.55);
+    pointer-events: none;
+  }
+
+  /* Shadows — deeper and softer */
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.10),
+    0 6px 14px rgba(0, 0, 0, 0.06);
+
+  transition: 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 16px 32px rgba(0, 0, 0, 0.12),
+      0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+}

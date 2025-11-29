@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Front-End Development",
+    "description": "High-quality React, SCSS, and responsive UI development. Pixel-perfect integration from Figma to production.",
+    "tags": ["React", "SCSS", "Responsive", "UI Integration"],
+    "icon": "frontend"
+  },
+  {
+    "id": 2,
+    "title": "WordPress & Theme Development",
+    "description": "Custom themes, WooCommerce integration, speed optimization and full theme creation like MonResto.",
+    "tags": ["WordPress", "Theme", "WooCommerce", "PHP"],
+    "icon": "wordpress"
+  },
+  {
+    "id": 3,
+    "title": "SaaS & Full-Stack Development",
+    "description": "Node.js + MongoDB applications, user systems, API development and complete platform design.",
+    "tags": ["Node.js", "Express", "MongoDB", "API"],
+    "icon": "saas"
+  },
+  {
+    "id": 4,
+    "title": "AI Tools & Automation",
+    "description": "Custom AI automations, email agents, business workflow integration and productivity boosters.",
+    "tags": ["AI", "Automation", "Agents", "Node.js"],
+    "icon": "ai"
+  }
+]

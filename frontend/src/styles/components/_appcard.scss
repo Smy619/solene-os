@@ -1,0 +1,133 @@
+/* -------------------------
+   App Grid
+------------------------- */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: $os-space-lg;
+  margin-top: $os-space-lg;
+  padding-bottom: $os-space-xl;
+}
+
+/* -------------------------
+   App Card (iOS Glassmorphism)
+------------------------- */
+.app-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: $os-radius-card;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.05),
+    $os-shadow-small;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: $os-space-lg;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $os-shadow-medium;
+  }
+}
+
+/* -------------------------
+   Tag + Status
+------------------------- */
+.app-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $os-space-sm;
+}
+
+.app-card-tag,
+.app-card-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: $os-radius-small;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+}
+
+.app-card-tag {
+  background: rgba(80, 102, 255, 0.1);
+  color: #3f51b5;
+}
+
+.app-card-status {
+  background: rgba(0, 0, 0, 0.06);
+  color: #6b7280;
+}
+
+/* -------------------------
+   Icon (Unified iOS style)
+------------------------- */
+.app-card-icon {
+  margin-bottom: $os-space-sm;
+
+  img {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
+    border-radius: $os-radius-medium;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    box-shadow: $os-shadow-small;
+
+    transition: transform 0.25s ease;
+  }
+}
+
+.app-card:hover img {
+  transform: scale(1.06);
+}
+
+/* -------------------------
+   Text Area
+------------------------- */
+.app-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 $os-space-xs;
+  letter-spacing: -0.02em;
+  color: $os-color-text;
+}
+
+.app-card-description {
+  font-size: 0.95rem;
+  color: $os-color-subtext;
+  line-height: 1.45;
+  flex: 1;
+}
+
+/* -------------------------
+   Footer (button)
+------------------------- */
+.app-card-footer {
+  margin-top: $os-space-md;
+  display: flex;
+}
+
+.app-card-btn {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: $os-radius-button;
+  background: rgba(0, 0, 0, 0.05);
+  color: #6b7280;
+  font-size: 0.9rem;
+  cursor: not-allowed;
+}
+
+
+

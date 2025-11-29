@@ -1,0 +1,140 @@
+.os-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: $os-space-lg;
+  position: relative;
+}
+
+/* Floating Logo */
+.os-logo-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75 rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.os-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.75rem;
+  margin-top: -0.3rem;
+}
+
+.os-text-block > * {
+  opacity: 0;
+  animation: fadeLine 0.6s ease-out forwards;
+}
+
+.os-text-block > *:nth-child(1) { animation-delay: 0.00s; }
+.os-text-block > *:nth-child(2) { animation-delay: 0.12s; }
+.os-text-block > *:nth-child(3) { animation-delay: 0.24s; }
+
+@keyframes fadeLine {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.os-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.35rem;
+  font-weight: 700;
+
+  color: #111;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+
+  margin-top: 2rem;
+}
+
+.os-subtitle {
+  font-family: "Inter", serif;
+  font-size: 1.15rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.85;
+
+  line-height: 1.35;
+}
+
+.os-tag {
+  font-family: "Inter", sans-serif;
+
+  border-radius: 10px;
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: #2b6e65;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+
+  display: inline-block;
+  line-height: 1;
+}
+
+/* App Grid */
+.os-app-grid {
+  margin-top: $os-space-lg;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $os-space-md;
+}
+
+/* App Grid */
+.os-app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* 120px */
+  gap: 2.5rem; /* 40px */
+  margin-top: 2.5rem;
+
+  width: 100%;
+  max-width: 44rem; /* 700px */
+  justify-items: center;
+}
+
+/* App Icon */
+.os-app {
+  width: 7rem; /* 112px */
+  height: 7rem; /* 112px */
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.875rem); /* 14px */
+  border-radius: 1.5rem; /* 24px */
+
+  padding: 1.25rem; /* 20px */
+
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.os-app img {
+  width: 2.5rem; /* 40px */
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.os-app span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.os-app:hover {
+  transform: scale(1.1);
+}

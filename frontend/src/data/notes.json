@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Project Card UI Setup",
+    "date": "2025-11-21",
+    "excerpt": "Initial setup for ProjectCard UI structure and SCSS layout."
+  },
+  {
+    "id": 2,
+    "title": "SCSS Global Import Fix",
+    "date": "2025-11-20",
+    "excerpt": "Fixed SCSS variable import conflicts caused by nested @use statements."
+  },
+  {
+    "id": 3,
+    "title": "SoleneOS Layout Architecture",
+    "date": "2025-11-19",
+    "excerpt": "Completed layout system: HomeLayout, SoleneOS layout, and Dock."
+  }
+]

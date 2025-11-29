@@ -1,0 +1,45 @@
+/* =============================
+   About Page — Solene OS Style
+   ============================= */
+
+.about-card {
+  padding: $os-space-xl;
+  border-radius: $os-radius-card;
+  background: $os-color-surface;
+  box-shadow: $os-shadow-soft;
+  display: flex;
+  flex-direction: column;
+  gap: $os-space-xl;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: $os-space-sm;
+}
+
+.about-section-title {
+  font-size: $os-font-xl;
+  font-weight: 600;
+  color: $os-color-dark;
+  line-height: $os-line-tight;
+}
+
+.about-section p {
+  font-size: $os-font-md;
+  color: $os-color-text;
+  line-height: $os-line-relaxed;
+}
+
+.about-list {
+  padding-left: $os-space-md;
+  display: flex;
+  flex-direction: column;
+  gap: $os-space-xs;
+
+  li {
+    font-size: $os-font-md;
+    color: $os-color-text;
+    line-height: $os-line-relaxed;
+  }
+}

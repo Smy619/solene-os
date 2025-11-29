@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Front-End Integration",
+    "tag": "€450-€800",
+    "icon": "frontend",
+    "description": "Pixel-perfect Figma → React integration with clean SCSS structure.",
+    "process": ["Figma Analysis", "Component Structure", "Responsive Layout"],
+    "delivery": ["React Components", "SCSS Modules"],
+    "timeline": "1-2 weeks"
+  },
+  {
+    "id": 2,
+    "name": "Full React Website",
+    "tag": "€800-€1,800",
+    "icon": "frontend",
+    "description": "Complete React corporate site with routing, SEO and animations.",
+    "process": ["Site Map", "Page Layout", "Deploy"],
+    "delivery": ["Full Website", "SEO Setup"],
+    "timeline": "1-2 weeks"
+  },
+  {
+    "id": 3,
+    "name": "Website Migration to React",
+    "tag": "€1,500-€3,000",
+    "icon": "migration",
+    "description": "Transform outdated HTML/jQuery sites into modern, scalable React apps.",
+    "process": ["Legacy Audit", "Component Rewrite", "Performance Upgrade"],
+    "delivery": ["Modern UI", "Reusable Components"],
+    "timeline": "1-2 weeks"
+  },
+  {
+    "id": 4,
+    "name": "WordPress Theme Development",
+    "tag": "€2,500-€5,000",
+    "icon": "wordpress",
+    "description": "Custom WP theme design, WooCommerce, customizer and page builder support.",
+    "process": ["Theme Architecture", "Custom Fields", "WooCommerce Setup"],
+    "delivery": ["Theme Zip", "Documentation"],
+    "timeline": "2-4 weeks"
+  },
+  {
+    "id": 5,
+    "name": "Speed Optimization",
+    "tag": "€200-€600",
+    "icon": "seo",
+    "description": "Lighthouse score improvement, image optimization, caching, CDN setup.",
+    "process": ["Audit", "Optimization", "Final Report"],
+    "delivery": ["Before/After Report"],
+    "timeline": "1 week"
+  },
+  {
+    "id": 6,
+    "name": "SaaS App (Full Stack)",
+    "tag": "€2,500-€15,000",
+    "icon": "saas",
+    "description": "Full-stack user system, CRUD operations, admin dashboard and APIs.",
+    "process": ["Architecture", "Backend", "UI + Deploy"],
+    "delivery": ["SaaS Platform", "Admin Panel"],
+    "timeline": "3-8 weeks"
+  },
+  {
+    "id": 7,
+    "name": "AI Tools & Automations",
+    "tag": "€800-€5,000",
+    "icon": "ai",
+    "description": "AI email agents, workflow automations, content tools, and task bots.",
+    "process": ["Workflow Design", "AI Agent Setup", "Integration"],
+    "delivery": ["AI Tool", "Guide"],
+    "timeline": "1-8 weeks"
+  }
+]
+

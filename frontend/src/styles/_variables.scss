@@ -1,0 +1,68 @@
+// 🌈 Colors — Solene OS Color System
+$os-color-primary: #2B7A69;
+$os-color-primary-soft: rgba(43, 122, 105, 0.08);
+$os-color-dark: #0F1A2A;
+$os-color-text: #2A2F3A;
+$os-color-subtext: #5A6475;
+$os-color-border: rgba(15, 26, 42, 0.08);
+$os-color-bg: #F5F5F5;
+$os-color-surface: #ffffff;
+$os-color-white: #ffffff;
+$os-color-hover: #0ba37f;
+$os-color-danger: #E54B4B;
+$os-color-success: #2B7A69;
+
+// 🌙 Shadows — iOS Soft Shadows
+$os-shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.08);
+$os-shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.10);
+$os-shadow-small: 0 6px 18px rgba(0, 0, 0, 0.06);
+
+// 🧱 Radius — card & components
+$os-radius-card: 28px;
+$os-radius-small: 20px;
+$os-radius-medium: 16px;
+$os-radius-large: 24px;
+$os-radius-button: 12px;
+$os-radius-pill: 999px;
+
+// 🅿️ Spacing
+$os-space-2xs: 4px;
+$os-space-xs: 8px;
+$os-space-sm: 12px;
+$os-space-md: 20px;
+$os-space-lg: 32px;
+$os-space-xl: 48px;
+$os-space-2xl: 72px;
+
+// 🔤 Typography
+$os-font-primary: "Inter", sans-serif;
+$os-font-title: "Inter", sans-serif;
+$os-font-logo: "Playfair Display", serif;
+$os-font-accent: "Parisienne", cursive;
+
+// Font sizes
+$os-font-xs: 0.75rem;
+$os-font-sm: 0.875rem;
+$os-font-md: 1rem;
+$os-font-lg: 1.125rem;
+$os-font-xl: 1.5rem;
+$os-font-2xl: 2rem;
+
+// Line height
+$os-line-tight: 1.2;
+$os-line-normal: 1.5;
+$os-line-relaxed: 1.7;
+
+// Breakpoints
+$os-bp-mobile: 480px;
+$os-bp-tablet: 768px;
+$os-bp-desktop: 1024px;
+$os-bp-large: 1440px;
+
+// Layers (z-index)
+$os-z-base: 1;
+$os-z-header: 50;
+$os-z-overlay: 100;
+$os-z-modal: 200;
+$os-z-toast: 300;
+
