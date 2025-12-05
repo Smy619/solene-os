@@ -19,6 +19,8 @@ const path = require("path");
 const cors = require("cors");
 const multer = require("multer");
 const jwt = require("jsonwebtoken");
+const sendMail = require("./sendMail");
+
 require("dotenv").config(); // Load ADMIN_PASSWORD & JWT_SECRET from backend/.env
 
 
@@ -195,6 +197,21 @@ app.get("/api/blogs/:id", (req, res) => {
   }
   res.json(blog);
 });
+
+// ------------------------------------
+//  CONTACT FORM API — sends email using Brevo
+// ------------------------------------
+app.post("/api/contact", async (req, res) => {
+  try {
+    await sendMail(req.body);
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Contact API error:", err);
+    res.status(500).json({ error: "Failed to send message" });
+  }
+});
+
+
 
 // ------------------------------------
 //  NOTES API
