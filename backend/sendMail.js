@@ -1,23 +1,22 @@
-const SibApiV3Sdk = require("sib-api-v3-sdk");
+const nodemailer = require("nodemailer");
 
-async function sendMail(form) {
-  const { firstName, lastName, email, subject, message } = form;
-
-  // Initialize Brevo client
-  const client = SibApiV3Sdk.ApiClient.instance;
-  client.authentications["api-key"].apiKey = process.env.BREVO_API_KEY;
-
-  const api = new SibApiV3Sdk.TransactionalEmailsApi();
-
-  await api.sendTransacEmail({
-    sender: { 
-      name: "Solene Dev Studio", 
-      email: "contact@solenesun.com" 
+async function sendMail({ firstName, lastName, email, subject, message }) {
+  const transporter = nodemailer.createTransport({
+    host: "smtp-relay.brevo.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.BREVO_SMTP_USER, 
+      pass: process.env.BREVO_API_KEY,
     },
-    to: [{ email: "contact@solenesun.com" }], // your mailbox
-    replyTo: { email }, // reply-to user's email
+  });
+
+  await transporter.sendMail({
+    from: '"Solene Dev Studio" <contact@solenesun.com>',
+    to: "contact@solenesun.com",
+    replyTo: email,
     subject: subject || "New message from Solene-OS",
-    htmlContent: `
+    html: `
       <h2>New message from your website</h2>
       <p><strong>Name:</strong> ${firstName} ${lastName}</p>
       <p><strong>Email:</strong> ${email}</p>
@@ -26,6 +25,9 @@ async function sendMail(form) {
       <p>${message.replace(/\n/g, "<br>")}</p>
     `,
   });
+
+  return true;
 }
 
 module.exports = sendMail;
+
