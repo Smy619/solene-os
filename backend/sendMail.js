@@ -1,33 +1,37 @@
-const nodemailer = require("nodemailer");
+const SibApiV3Sdk = require("sib-api-v3-sdk");
 
-async function sendMail({ firstName, lastName, email, subject, message }) {
-  const transporter = nodemailer.createTransport({
-    host: "smtp-relay.brevo.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.BREVO_SMTP_USER, 
-      pass: process.env.BREVO_API_KEY,
-    },
-  });
+async function sendMail(form) {
+  const { firstName, lastName, email, subject, message } = form;
 
-  await transporter.sendMail({
-    from: '"Solene Dev Studio" <contact@solenesun.com>',
-    to: "contact@solenesun.com",
-    replyTo: email,
-    subject: subject || "New message from Solene-OS",
-    html: `
-      <h2>New message from your website</h2>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Subject:</strong> ${subject}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message.replace(/\n/g, "<br>")}</p>
-    `,
-  });
+  const client = SibApiV3Sdk.ApiClient.instance;
+  client.authentications["api-key"].apiKey = process.env.BREVO_API_KEY;
 
-  return true;
+  const api = new SibApiV3Sdk.TransactionalEmailsApi();
+
+  try {
+    await api.sendTransacEmail({
+      sender: {
+        name: "Solene Dev Studio",
+        email: "contact@solenesun.com",
+      },
+      to: [{ email: "contact@solenesun.com" }],
+      replyTo: { email },
+      subject: subject || "New message from Solene-Sun Website",
+      htmlContent: `
+        <h2>New Contact Message</h2>
+        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+      `,
+    });
+
+    console.log("🟢 Email sent successfully via Brevo API");
+    return { success: true };
+  } catch (err) {
+    console.error("🔴 Brevo API Error:", err);
+    return { success: false, error: err };
+  }
 }
 
 module.exports = sendMail;
-
