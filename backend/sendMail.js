@@ -15,7 +15,8 @@ async function sendMail(form) {
         email: "contact@solenesun.com",
       },
       to: [{ email: "contact@solenesun.com" }],
-      replyTo: { email },
+      replyTo: email,
+
       subject: subject || "New message from Solene-Sun Website",
       htmlContent: `
         <h2>New Contact Message</h2>
