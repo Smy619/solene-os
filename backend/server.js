@@ -26,7 +26,9 @@ require("dotenv").config(); // Load ADMIN_PASSWORD & JWT_SECRET from backend/.en
 
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
+
+
 
 // ------------------------------------
 //  CORS CONFIGURATION
