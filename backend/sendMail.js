@@ -34,12 +34,13 @@ async function sendMail(form) {
         headers: {
           "api-key": process.env.BREVO_API_KEY,
           "Content-Type": "application/json",
-          "Accept": "application/json",
+          Accept: "application/json",
         },
-        timeout: 10000, //
+        timeout: 10000,
+      }
     );
 
-    console.log("🟢 Email sent via Brevo API:", response.data);
+    console.log("🟢 Email sent via Brevo API", response.data);
     return { success: true };
 
   } catch (error) {
@@ -55,3 +56,4 @@ async function sendMail(form) {
 }
 
 module.exports = sendMail;
+
