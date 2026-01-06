@@ -37,13 +37,13 @@ export default function AppRouter() {
       <Route path="/settings" element={<SoleneOS><Settings /></SoleneOS>} />
       <Route path="/tools" element={<SoleneOS><AITools /></SoleneOS>} />
 
-      {/* BLOG / NOTES 公共页面 */}
+      {/* BLOG / NOTES */}
       <Route path="/blog" element={<SoleneOS><Blog /></SoleneOS>} />
       <Route path="/blog/:id" element={<SoleneOS><BlogDetail /></SoleneOS>} />
       <Route path="/notes" element={<SoleneOS><Notes /></SoleneOS>} />
 
       {/* ===========================
-          ADMIN LOGIN（必须放前面！）
+          ADMIN LOGIN/LOGOUT
       ============================== */}
       <Route path="/admin/login" element={<SoleneOS><AdminLogin /></SoleneOS>} />
       <Route path="/admin/logout" element={<SoleneOS><AdminLogout /></SoleneOS>} />
